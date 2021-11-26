@@ -1,0 +1,6 @@
+module Pods_APPME {
+  umbrella header "Pods-APPME-umbrella.h"
+
+  export *
+  module * { export * }
+}

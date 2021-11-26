@@ -1,0 +1,20 @@
+PODS:
+  - DataCache (1.6.0)
+  - SnapKit (5.0.1)
+
+DEPENDENCIES:
+  - DataCache
+  - SnapKit
+
+SPEC REPOS:
+  trunk:
+    - DataCache
+    - SnapKit
+
+SPEC CHECKSUMS:
+  DataCache: 5f24b356848a37469dbebec89c28ca88b4ef9294
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+
+PODFILE CHECKSUM: 5333492b4eebbe231a020d439a951ab036d02c22
+
+COCOAPODS: 1.10.1
