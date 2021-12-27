@@ -1,20 +1,28 @@
 PODS:
-  - DataCache (1.6.0)
+  - CPFData (0.1.2)
   - SnapKit (5.0.1)
 
 DEPENDENCIES:
-  - DataCache
+  - CPFData (from `https://gitee.com/hobe/cpfdata.git`)
   - SnapKit
 
 SPEC REPOS:
   trunk:
-    - DataCache
     - SnapKit
 
+EXTERNAL SOURCES:
+  CPFData:
+    :git: https://gitee.com/hobe/cpfdata.git
+
+CHECKOUT OPTIONS:
+  CPFData:
+    :commit: cacf557ccb4095429adde135999e1c9942fa2822
+    :git: https://gitee.com/hobe/cpfdata.git
+
 SPEC CHECKSUMS:
-  DataCache: 5f24b356848a37469dbebec89c28ca88b4ef9294
+  CPFData: ba3dd98a5c75473499119ee592040079f6f44183
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
-PODFILE CHECKSUM: 5333492b4eebbe231a020d439a951ab036d02c22
+PODFILE CHECKSUM: dcbf8f2145c76c480a9858112c315dd3563042ed
 
 COCOAPODS: 1.10.1

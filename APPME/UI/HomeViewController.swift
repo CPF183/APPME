@@ -8,6 +8,7 @@
 import Foundation
 
 import UIKit
+import CPFData
 
 class HomeViewController: UIViewController {
     

@@ -1,0 +1,6 @@
+framework module CPFData {
+  umbrella header "CPFData-umbrella.h"
+
+  export *
+  module * { export * }
+}

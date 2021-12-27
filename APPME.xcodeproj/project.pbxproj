@@ -3,11 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C362BF14AAD689BFBC69CD91 /* libPods-APPME.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C4353CD79EC3C7DAE1797D0 /* libPods-APPME.a */; };
+		0AC49AC615B7C44C33489FDA /* Pods_APPME.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C8FD63D26AD3FDC82F63028 /* Pods_APPME.framework */; };
 		D00839A32747913700DBFB87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00839A22747913700DBFB87 /* AppDelegate.swift */; };
 		D00839A52747913700DBFB87 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00839A42747913700DBFB87 /* SceneDelegate.swift */; };
 		D00839A72747913700DBFB87 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00839A62747913700DBFB87 /* ContentView.swift */; };
@@ -37,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5C4353CD79EC3C7DAE1797D0 /* libPods-APPME.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-APPME.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C8FD63D26AD3FDC82F63028 /* Pods_APPME.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_APPME.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		666B6E2393A6BA599FE7ACAF /* Pods-APPME.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APPME.debug.xcconfig"; path = "Target Support Files/Pods-APPME/Pods-APPME.debug.xcconfig"; sourceTree = "<group>"; };
 		94974801325BFEACC27DECB6 /* Pods-APPME.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APPME.release.xcconfig"; path = "Target Support Files/Pods-APPME/Pods-APPME.release.xcconfig"; sourceTree = "<group>"; };
 		D008399F2747913700DBFB87 /* APPME.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APPME.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,7 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C362BF14AAD689BFBC69CD91 /* libPods-APPME.a in Frameworks */,
+				0AC49AC615B7C44C33489FDA /* Pods_APPME.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,7 +86,7 @@
 		7A01F2228A0A3304311B8633 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5C4353CD79EC3C7DAE1797D0 /* libPods-APPME.a */,
+				0C8FD63D26AD3FDC82F63028 /* Pods_APPME.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -182,6 +182,7 @@
 				D008399B2747913700DBFB87 /* Sources */,
 				D008399C2747913700DBFB87 /* Frameworks */,
 				D008399D2747913700DBFB87 /* Resources */,
+				ABEC7039D52819481BF29F6A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -298,6 +299,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		ABEC7039D52819481BF29F6A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-APPME/Pods-APPME-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-APPME/Pods-APPME-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-APPME/Pods-APPME-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		F076F456E4503DB9780C03DD /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -410,6 +428,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -471,6 +490,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -499,7 +519,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_ASSET_PATHS = "\"APPME/Preview Content\"";
 				DEVELOPMENT_TEAM = QHZ4CWKW4K;
 				ENABLE_PREVIEWS = YES;
@@ -511,6 +532,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.pf.APPME;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = com.pf.APPME;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
@@ -523,7 +545,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_ASSET_PATHS = "\"APPME/Preview Content\"";
 				DEVELOPMENT_TEAM = QHZ4CWKW4K;
 				ENABLE_PREVIEWS = YES;
@@ -535,6 +558,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.pf.APPME;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "com.pf.APPME AppStore";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";

@@ -1,0 +1,58 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+platform :ios do
+  #desc "Description of what the lane does"
+  #lane :custom_lane do
+    # add actions here: https://docs.fastlane.tools/actions
+  #end
+
+desc "以 app-store 方式打包并上传到 iTunes Connect"
+  lane :app_me do
+
+    #puts "自动生成 Provisioning Profiles 文件"
+    sigh(
+      #指定输出的文件夹地址
+      output_path: "./archive/sign"
+    )
+
+    puts "以 app-store 方式打包"
+    gym(
+      # 指定打包所使用的输出方式 (可选: app-store, package, ad-hoc, enterprise, development)
+      export_method: "app-store",
+      workspace: "APPME.xcworkspace", #如果项目使用CocoaPods需要加上
+      # 指定项目的 scheme 名称
+      scheme: "APPME",
+      # 指定输出的文件夹地址
+      output_directory: "./archive/release/" + Time.new.strftime("%Y-%m-%d-%H:%M:%S"),
+      # 指定打包方式 (可选: Release, Debug)
+      configuration: "Release"
+    )
+
+    #puts "上传 ipa 包到 iTunes Connect"
+    deliver(
+      # 跳过截图上传
+      skip_screenshots: true,
+      # 跳过元数据上传
+      skip_metadata: true,
+      # 跳过审核直接上传
+      force: true
+    )
+
+  end
+
+end

@@ -1,0 +1,22 @@
+{
+  "name": "CPFData",
+  "version": "0.1.2",
+  "summary": "A short description of CPFData.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://gitee.com/hobe/cpfdata",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "CPF": "942319299@qq.com"
+  },
+  "source": {
+    "git": "https://gitee.com/hobe/cpfdata.git",
+    "tag": "0.1.2"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "CPFData/Classes/**/*"
+}

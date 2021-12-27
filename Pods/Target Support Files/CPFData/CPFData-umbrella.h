@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double DataCacheVersionNumber;
-FOUNDATION_EXPORT const unsigned char DataCacheVersionString[];
+FOUNDATION_EXPORT double CPFDataVersionNumber;
+FOUNDATION_EXPORT const unsigned char CPFDataVersionString[];
 
